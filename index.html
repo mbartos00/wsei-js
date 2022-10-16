@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" class="num" placeholder="Wprowadź liczbe">
-    
-   
-    
-    <span class="result"></span><br/>
-    <button class="submit">Przelicz</button>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      input {
+        padding: 10px;
+      }
+      input + input {
+        margin-top: 10px;
+      }
+      span + span {
+        margin-top: 10px;
+      }
+      .result-wrapper {
+        margin-top: 5rem;
+        width: 100%;
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+      }
+      .result-wrapper span {
+        border: 1px solid #00000034;
+        width: 30%;
+        height: 50px;
+        margin-bottom: 10px;
+        color: #00000034;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="num" placeholder="Wprowadź liczbe" />
+    <input type="text" class="num" placeholder="Wprowadź liczbe" />
+    <input type="text" class="num" placeholder="Wprowadź liczbe" />
+
+    <div class="result-wrapper">
+      <span class="sum">Suma</span>
+      <span class="avg">Średnia</span>
+      <span class="min">Minimum</span>
+      <span class="max">Maximum</span>
+    </div>
+
+    <!-- <button class="submit">Przelicz</button><br /> -->
     <button class="addInput">Dodaj pole</button>
 
-
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
