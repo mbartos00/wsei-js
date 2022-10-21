@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="slideshow-container">
-
-          <img  class="slide" src="img1.jpg">
-      
-          <img class="slide hidden"  src="img2.jpg">
-      
-          <img class="slide hidden"  src="img3.jpg">
-      
-        <a class="prev">&#10094;</a>
-        <a class="next" >&#10095;</a>
+      <span class="close-btn">[X]</span>
+      <div class="slide">
+        <img class="slide-item" src="img1.jpg" />
       </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot" ></span>
-        <span class="dot" ></span>
-        <span class="dot" ></span>
+      <div class="slide hidden">
+        <img class="slide-item" src="img2.jpg" />
+      </div>
+      <div class="slide hidden">
+        <img class="slide-item" src="img3.jpg" />
+      </div>
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <div class="button-wrapper">
+      <button class="start-btn">Start</button>
+      <button class="stop-btn">Stop</button>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
