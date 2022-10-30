@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+  <section class="main-wrapper">
+    <h1 class="main-title">JavaScript Drum Kit</h1>
+    <div class="drum-kit-wrapper">
+      <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span>Kick</span>
+      </div>
+      <div data-key="66" class="key">
+          <kbd>B</kbd>
+          <span>Clap</span>
+      </div>
+      <div data-key="86" class="key">
+          <kbd>V</kbd>
+          <span>Hihat</span>
+      </div>
+      <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span>Kick</span>
+      </div>
+      <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span>Openhat</span>
+      </div>
+      <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span>Ride</span>
+      </div>
+      <div data-key="69" class="key">
+          <kbd>E</kbd>
+          <span>Snare</span>
+      </div>
+      <div data-key="82" class="key">
+          <kbd>R</kbd>
+          <span>Tink</span>
+      </div>
+      <div data-key="73" class="key">
+          <kbd>I</kbd>
+          <span>Tom</span>
+      </div>
+    
+      
+    </div>
+  </section>
+
+  <button class="record">record</button>
+  <button class="stop">stop</button>
+  <button class="play">play</button>
+</main>
+<audio data-key="74" src="./sounds/boom.wav"></audio>
+<audio data-key="66" src="./sounds/clap.wav"></audio>
+<audio data-key="86" src="./sounds/hihat.wav"></audio>
+<audio data-key="72" src="./sounds/kick.wav"></audio>
+<audio data-key="71" src="./sounds/openhat.wav"></audio>
+<audio data-key="70" src="./sounds/ride.wav"></audio>
+<audio data-key="69" src="./sounds/snare.wav"></audio>
+<audio data-key="82" src="./sounds/tink.wav"></audio>
+<audio data-key="73" src="./sounds/tom.wav"></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
