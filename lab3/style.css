@@ -1,79 +1,91 @@
 @import url(https://fonts.googleapis.com/css?family=Handlee|Pacifico);
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .main-wrapper {
-	width:100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
+}
+.button-container {
+  margin: 1rem auto 0;
+  display: flex;
+  gap: 1rem;
+}
+.button-container .key {
+  padding: 2.5rem;
+  transition: all ease-in-out 0.5s;
 }
 
+.channels-container {
+  display: flex;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.error {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  color: red;
+  margin: 0 auto;
+}
 .main-title {
-	font-family: 'Pacifico', cursive;
-	text-align: center;
-	font-size: 3.2em;
-	color: #cb2026;
-	text-shadow: 1px 1px 1px #5a0b0d;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 3.2em;
+  color: #cb2026;
+  text-shadow: 1px 1px 1px #5a0b0d;
 }
 
 .drum-kit-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 80vh;
 }
-
 
 .key {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-	background-color:#5f45f12f;
-    font-size: 1.5em;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 4px;
-    border: 3px solid #aaa;
-    color: #444;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
-    z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5f45f12f;
+  font-size: 1.5em;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 4px;
+  border: 3px solid #aaa;
+  color: #444;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+  z-index: 2;
 }
-.key span{
-    font-family: 'Pacifico', sans-serif;
-    font-size: 1rem;
+.key span {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.key .record {
+  position: relative;
+}
+.key .record-dot {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: red;
+  border-radius: 100vh;
+  top: 50%;
+  left: -25%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
