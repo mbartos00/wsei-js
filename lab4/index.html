@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: white;
+        background-color: #1b2430;
+        color: #d6d5a8;
+        display: flex;
+        margin-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+      }
+      input {
+        background-color: #51557e;
+        border: 1px solid #816797;
+        color: #d6d5a8;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      #note-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 800px;
+      }
+      #note-form input:not([type='checkbox']) {
+        margin-bottom: 1rem;
+      }
+      .note-color--wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-block: 1rem;
+        flex-direction: column;
+      }
+      .note-wrapper {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+      }
+      .note {
+        background-color: #f7e1a8;
+        color: black;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        box-shadow: -1px -3px 25px -15px rgba(214, 213, 168, 1);
+      }
+      .note .title {
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+      }
+      .note .content {
+        margin-top: 0.5rem;
+      }
+      .note .date {
+        position: absolute;
+        bottom: 0.625rem;
+      }
+      .note-pin {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+      .note-pin input {
+        cursor: pointer;
+      }
+      .search-wrapper {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="note-form" autocomplete="off">
+      <label for="note-title">Title</label>
+      <input type="text" name="note-title" id="note-title" />
+      <label for="note-content">Content</label>
+      <input type="text" name="note-content" id="note-content" />
+      <div class="note-color--wrapper">
+        <label for="note-color--picker">Pick color</label>
+        <select name="note-color--picker" id="note-color--picker">
+          <option style="background-color: #f7e1a8" value="#f7e1a8">
+            Default
+          </option>
+          <option style="background-color: #8585fd" value="#8585fd">
+            Blue
+          </option>
+          <option style="background-color: #ce0707" value="#ce0707">Red</option>
+          <option style="background-color: #00af00" value="#00af00">
+            Green
+          </option>
+          <option style="background-color: #ffc0cb" value="#ffc0cb">
+            Pink
+          </option>
+        </select>
+      </div>
+      <label for="note-tagCheckbox">Want to add tag ?</label>
+      <input type="checkbox" name="note-tagCheckbox" id="note-tagCheckbox" />
+      <label for="note-tag">Type tag name</label>
+      <input type="text" name="note-tag" id="note-tag" />
+      <button type="submit" id="note-submit">Add note</button>
+    </form>
+    <form class="search-wrapper">
+      <label for="search-note">Search note</label>
+      <input type="text" id="search-note" />
+    </form>
+    <div class="note-wrapper"></div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
