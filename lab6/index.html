@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+      }
+      .controls {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <label for="circlesNum">Number of circles</label>
+      <input
+        type="number"
+        name="circlesNum"
+        id="circlesNum"
+        placeholder="100"
+      />
+      <label for="forceRange">Force Range</label>
+      <input
+        type="number"
+        min="70"
+        placeholder="80"
+        max="160"
+        name="forceRange"
+        id="forceRange"
+      />
+      <label for="canvasWidth">Canvas width</label>
+      <input
+        type="number"
+        name="canvasWidth"
+        id="canvasWidth"
+        placeholder="Window width by default"
+      />
+      <label for="canvasHeight">Canvas height</label>
+      <input
+        type="number"
+        placeholder="Window height by default"
+        name="canvasHeight"
+        id="canvasHeight"
+      />
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+    </div>
+    <h1 id="fps"></h1>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="index.js"></script>
+  </body>
+</html>
