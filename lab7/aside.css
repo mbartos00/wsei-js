@@ -1,0 +1,97 @@
+@import './header.css';
+
+.aside__content {
+  max-width: 30%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 3.55rem;
+  width: 100%;
+  color: #e7e7eb;
+  background-color: #1e213a;
+  background-image: url(../images/cloud_background.svg);
+  background-size: cover;
+  animation: wind 20s infinite linear;
+}
+@keyframes wind {
+  0% {
+    background-position: -515px 200px, -300px 300px, -200px 250px;
+  }
+  100% {
+    background-position: 1200px 200px, 1300px 300px, 1250px 250px;
+  }
+}
+.aside__content .aside__informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.aside__content .aside__informations--image-container {
+  display: inherit;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+.aside__content .aside__informations--image-container img {
+  width: 15rem;
+  aspect-ratio: 1;
+}
+.aside__content .aside__informations--temp-container {
+  margin-top: 2rem;
+}
+.aside__content .aside__informations--temp-container-temperature {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.aside__content .aside__informations--temp-container-temperature::after {
+  content: '°C';
+  position: absolute;
+  left: 100%;
+  top: calc(50% - 5px);
+  color: #88869d;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.aside__content .aside__informations--temp-container-type {
+  color: #a09fb1;
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+.aside__content .aside__informations--date {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #88869d;
+}
+.aside__content .aside__informations--date .dot {
+  width: 3px;
+  aspect-ratio: 1;
+  border-radius: 100vh;
+  background: #88869d;
+}
+.aside__content .aside__informations--date-today {
+  margin-right: 1.5rem;
+}
+.aside__content .aside__informations--date-current {
+  margin-left: 1.5rem;
+}
+.aside__content .aside__informations--location {
+  position: absolute;
+  bottom: 5%;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.aside__content .aside__informations--location-ico {
+  width: 16px;
+  margin-right: 0.7rem;
+}
+.aside__content .aside__informations--location-current {
+  color: #88869d;
+}

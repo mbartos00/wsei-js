@@ -1,0 +1,99 @@
+.header__nav {
+  max-width: 30%;
+  position: fixed;
+  z-index: 2;
+  background-color: #1e213a;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  transition: all ease-in-out 0.5s;
+  transform: translateX(-200%);
+}
+.header__nav--btn-close {
+  position: absolute;
+  width: 30px;
+  padding: 10px;
+  height: 30px;
+  margin-top: 1.1rem;
+  margin-right: 1.1rem;
+  right: 0;
+  cursor: pointer;
+}
+.header__nav--btn-close-line {
+  transform: rotate(45deg);
+  top: 50%;
+  left: -50%;
+  background-color: #e7e7eb;
+  border-radius: 50px;
+  width: 20px;
+  height: 2px;
+  position: relative;
+}
+.header__nav--btn-close-line::after {
+  position: absolute;
+  content: '';
+  transform: rotate(-90deg);
+  background-color: #e7e7eb;
+  border-radius: 50px;
+  width: 20px;
+  height: 2px;
+}
+.header__nav--searchbar-container {
+  margin-top: 3.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header__nav--searchbar-container-ico {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__nav--searchbar-container--input {
+  margin-inline: 0.8rem;
+  width: 75%;
+  color: #616475;
+  text-align: left;
+  padding: 0.8rem 2.5rem;
+  background-color: #1e213a;
+  border: 2px solid #9494a5;
+  border-radius: 2px;
+}
+.header__nav--searchbar-container--input::placeholder {
+  position: absolute;
+  color: #616475;
+  left: 15%;
+}
+.header__nav--searchbar-container--btn {
+  margin-right: 0.8rem;
+  width: 25%;
+  background-color: #3c47e9;
+  color: #e7e7eb;
+  border: none;
+}
+.header__nav--recent-cities {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 100%;
+  margin-inline: 1rem;
+}
+.header__nav--recent-cities-title {
+  color: #616475;
+}
+.header__nav--recent-cities-city {
+  margin-top: 1rem;
+  text-align: left;
+  padding: 1rem;
+  width: 90%;
+  background-color: #1e213a;
+  color: #e7e7eb;
+  border: 2px solid #616475;
+  position: relative;
+}

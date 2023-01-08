@@ -1,5 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import './globals.css';
+@import './aside.css';
+@import './main.css';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
 }
