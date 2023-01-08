@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 241">
+  <ellipse id="center" cx="91" cy="91.5" rx="91" ry="91.5" transform="translate(29 28)" fill="#ffec65"/>
+  <g id="outer" transform="translate(15 15)" fill="none" stroke="rgba(255,248,107,0.75)" stroke-width="6">
+    <ellipse cx="105.5" cy="105" rx="105.5" ry="105" stroke="none"/>
+    <ellipse cx="105.5" cy="105" rx="102.5" ry="102" fill="none"/>
+  </g>
+  <g id="outer-2" data-name="outer" fill="none" stroke="rgba(255,248,107,0.23)" stroke-width="4">
+    <circle cx="120.5" cy="120.5" r="120.5" stroke="none"/>
+    <circle cx="120.5" cy="120.5" r="118.5" fill="none"/>
+  </g>
+</svg>
