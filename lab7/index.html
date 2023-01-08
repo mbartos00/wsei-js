@@ -17,5 +17,111 @@
     />
     <title>Pogodynka</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <aside class="aside__content">
+        <header class="aside__header">
+          <nav class="header__nav">
+            <div
+              id="closeNavBtn"
+              class="header__nav--btn-close"
+              aria-label="close-btn"
+            >
+              <div class="header__nav--btn-close-line"></div>
+            </div>
+            <div class="header__nav--searchbar-container">
+              <img
+                class="header__nav--searchbar-container-ico"
+                src="./images/search-ico.png"
+                alt="search"
+              />
+              <input
+                type="text"
+                aria-label="searchbar"
+                placeholder="search location"
+                id="searchBar"
+                class="header__nav--searchbar-container--input"
+              />
+              <button
+                id="searchBtn"
+                class="header__nav--searchbar-container--btn"
+              >
+                Search
+              </button>
+            </div>
+            <div
+              class="header__nav--recent-cities"
+              id="recentCities"
+            >
+              <p class="header__nav--recent-cities-title">Recently Searched</p>
+            </div>
+          </nav>
+          <div class="header__btns">
+            <button
+              id="openNavBtn"
+              class="header__btns--btn-search"
+            >
+              Search for places
+            </button>
+            <button
+              id="locationBtn"
+              class="header__btns--btn-location"
+            >
+              <img
+                src="./images/gps.svg"
+                alt="gps-ico"
+              />
+            </button>
+          </div>
+        </header>
+        <div class="aside__informations">
+          <div class="aside__informations--image-container">
+            <img
+              id="asideImage"
+              src="./images/Shower.svg"
+              alt="shower-ico"
+            />
+          </div>
+          <div class="aside__informations--temp-container">
+            <h1
+              id="asideTemperature"
+              class="aside__informations--temp-container-temperature"
+            >
+              15
+            </h1>
+            <h3
+              id="asideWeatherType"
+              class="aside__informations--temp-container-type"
+            >
+              Shower
+            </h3>
+          </div>
+          <div class="aside__informations--date">
+            <h4 class="aside__informations--date-today">Today</h4>
+            <span class="dot"></span>
+            <h4
+              id="currentDate"
+              class="aside__informations--date-current"
+            >
+              Fri, 5 Jun
+            </h4>
+          </div>
+          <div class="aside__informations--location">
+            <img
+              class="aside__informations--location-ico"
+              src="./images/location.svg"
+              alt="location-ico"
+            />
+            <h4
+              id="currentLocation"
+              class="aside__informations--location-current"
+            >
+              Helsinki
+            </h4>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
